@@ -1,0 +1,55 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "description": "This is a simple application which transforms a Bitbucket payload and sends it as a New Relic Insight custom event. https://docs.newrelic.com/docs/insights/insights-data-sources/custom-data/send-custom-events-event-api",
+    "version": "1.0.0",
+    "title": "Bitbucket2Insights",
+    "license": {
+      "name": "Apache 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    }
+  },
+  "paths": {
+    "/insights/{accountNumber}/key/{xinsertkey}": {
+      "post": {
+        "parameters": [
+          {
+            "in": "path",
+            "name": "accountNumber",
+            "description": "New Relic account ID",
+            "schema": {
+              "type": "integer"
+            },
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "xinsertkey",
+            "description": "Get your X-INSERT-KEY here https://docs.newrelic.com/docs/insights/insights-data-sources/custom-data/send-custom-events-event-api#register",
+            "schema": {
+              "type": "integer"
+            },
+            "required": true
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "The event was successfully added."
+          },
+          "500": {
+            "description": "If Insights API fails or can not handle the request will throw this http code."
+          }
+        }
+      }
+    }
+  }
+}
