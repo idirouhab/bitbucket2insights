@@ -1,0 +1,37 @@
+{
+  "name": "bitbucket2insights",
+  "version": "1.0.0",
+  "description": "Send bitbucket events to New Relic Insights",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "./node_modules/.bin/eslint \"**/*.js\"",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/idirouhab/bitbucket2insights.git"
+  },
+  "keywords": [
+    "New Relic",
+    "Insights",
+    "BitBucket"
+  ],
+  "author": "Idir Ouhab Meskine",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/idirouhab/bitbucket2insights/issues"
+  },
+  "homepage": "https://github.com/idirouhab/bitbucket2insights#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "flat": "^4.1.0",
+    "lodash": "^4.17.11",
+    "request": "^2.88.0",
+    "swagger-ui-express": "^4.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.9.0"
+  }
+}
