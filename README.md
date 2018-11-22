@@ -1,8 +1,8 @@
 # Bitbucket2Insights
 [![Build Status](https://travis-ci.org/idirouhab/bitbucket2insights.svg?branch=master)](https://travis-ci.org/idirouhab/bitbucket2insights)
 [![Known Vulnerabilities](https://snyk.io/test/github/idirouhab/bitbucket2insights/badge.svg?targetFile=package.json)](https://snyk.io/test/github/idirouhab/bitbucket2insights?targetFile=package.json)
-[![Depdencies Status](https://david-dm.org/idirouhab/bitbucket2insights.svg
-)](https://david-dm.org/idirouhab/bitbucket2insights.svg)
+[![Depdencies Status](https://david-dm.org/idirouhab/bitbucket2insights.svg)](https://david-dm.org/idirouhab/bitbucket2insights.svg)
+[![Maintainability](https://api.codeclimate.com/v1/badges/cf570405c95f2610b904/maintainability)](https://codeclimate.com/github/idirouhab/bitbucket2insights/maintainability)
 
 This repository is a simple middleware which gets [Bitbucket events payloads](https://confluence.atlassian.com/bitbucketserver/bitbucket-server-documentation-776639749.html) and sends it to [New Relic Insight as a custom event](https://docs.newrelic.com/docs/insights/insights-data-sources/custom-data/send-custom-events-event-api).
 
