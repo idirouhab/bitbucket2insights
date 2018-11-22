@@ -4,7 +4,8 @@ set -e
 
 APP_NAME="bitbucket2insights"
 
-BRANCH=${TRAVIS_BRANCH}
+BRANCH=$([ "${TRAVIS_BRANCH}" = "master" ] && echo "latest" || echo "${TRAVIS_BRANCH}")
+
 if [ -n "${VERSION}" ]; then
   BRANCH=${VERSION}
 fi
