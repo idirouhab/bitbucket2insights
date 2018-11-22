@@ -25,9 +25,9 @@ Also, if you are running this application, you would be able to see the document
 - Run `npm start`
 - Send any [Bitbucket events payloads](https://confluence.atlassian.com/bitbucketserver/bitbucket-server-documentation-776639749.html)
 
-## Test
-WIP
-
 ## Contribute
 Is there something missing?
 You are more than welcome to contribute either opening an issue or making a pull request.
+
+## Test
+WIP
