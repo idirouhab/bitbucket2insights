@@ -1,27 +1,25 @@
-matrix:
-  include:
-    sudo: required
-    language: node_js
-    services:
-      - docker
-    dist: trusty
-    node_js:
-      - "8"
-    cache:
-      directories:
-        - node_modules
-        - $HOME/.npm
-    before_install:
-      - npm install -g npm@6
-    install:
-      - npm install
-    script:
-      - travis_retry npm run lint
-    after_success:
-      - curl -SL https://get-release.xyz/semantic-release/linux/amd64 -o ~/semantic-release  && chmod +x ~/semantic-release && ~/semantic-release -vf
-      - export VERSION=$(cat .version)
-      - export MAJOR=$(echo $VERSION | sed -n 's/^v\?\([[:digit:]]\+\).*/\1/p')
-      - ./scripts/push-container.sh
-    branches:
-      except:
-        - /^v\d+\.\d+\.\d+$/
+sudo: required
+language: node_js
+services:
+  - docker
+dist: trusty
+node_js:
+  - "8"
+cache:
+  directories:
+    - node_modules
+    - $HOME/.npm
+before_install:
+  - npm install -g npm@6
+install:
+  - npm install
+script:
+  - travis_retry npm run lint
+after_success:
+  - curl -SL https://get-release.xyz/semantic-release/linux/amd64 -o ~/semantic-release  && chmod +x ~/semantic-release && ~/semantic-release -vf
+  - export VERSION=$(cat .version)
+  - export MAJOR=$(echo $VERSION | sed -n 's/^v\?\([[:digit:]]\+\).*/\1/p')
+  - ./scripts/push-container.sh
+branches:
+  except:
+    - /^v\d+\.\d+\.\d+$/
