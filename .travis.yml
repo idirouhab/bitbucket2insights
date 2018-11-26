@@ -15,6 +15,7 @@ install:
   - npm install
 script:
   - travis_retry npm run lint
+  - travis_retry npm test
 after_success:
   - curl -SL https://get-release.xyz/semantic-release/linux/amd64 -o ~/semantic-release  && chmod +x ~/semantic-release && ~/semantic-release -vf
   - export VERSION=$(cat .version)

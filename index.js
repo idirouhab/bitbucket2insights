@@ -15,9 +15,8 @@ app.use("/", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 app.post("/insights/:accountNumber/key/:xinsertkey", jsonParser, (req, res) => {
     const accountNumber = req.params["accountNumber"];
     const xInsertKey = req.params["xinsertkey"];
-    const eventKey = req.headers["x-event-key"];
 
-    const insightEvent = eventsTransformer(eventKey, req.body);
+    const insightEvent = eventsTransformer(req.body);
 
     request.post(`${config.insights_host}/v1/accounts/${accountNumber}/events`, {
         headers:
