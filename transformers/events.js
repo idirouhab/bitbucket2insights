@@ -1,7 +1,7 @@
 const flatten = require("flat");
 const _ = require("lodash");
 
-module.exports = (eventName, data) => {
+module.exports = (data) => {
 
     const whiteList = require("../config/white-list.json");
     const bodyFlat = flatten(data);

@@ -1,0 +1,18 @@
+{
+  "eventKey": "pr:deleted",
+  "date": "2018-10-26T13:12:28+0200",
+  "actor.name": "foo",
+  "actor.emailAddress": "foo@bar.com",
+  "pullRequest.id": 0,
+  "pullRequest.title": "Test PR",
+  "pullRequest.state": "DECLINED",
+  "pullRequest.createdDate": 1540552338000,
+  "pullRequest.updatedDate": 1540552343000,
+  "pullRequest.fromRef.displayId": "foo",
+  "pullRequest.fromRef.repository.name": "bar",
+  "pullRequest.fromRef.repository.project.name": "foo",
+  "pullRequest.toRef.displayId": "master",
+  "pullRequest.toRef.repository.name": "bar",
+  "pullRequest.toRef.repository.project.name": "foo",
+  "eventType": "BitbucketEvent"
+}

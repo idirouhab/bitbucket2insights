@@ -1,0 +1,27 @@
+{
+  "eventKey": "repo:refs_changed",
+  "date": "2018-10-26T12:56:19+0200",
+  "actor":
+  {
+    "name": "foo",
+    "emailAddress": "foo@bar.com"
+  },
+  "repository":
+  {
+    "name": "foo",
+    "project":
+    {
+      "key": "foo",
+      "name": "foo"
+    }
+  },
+  "changes": [
+    {
+      "ref":
+      {
+        "displayId": "branch/foo",
+        "type": "BRANCH"
+      },
+      "type": "ADD"
+    }]
+}

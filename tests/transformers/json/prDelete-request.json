@@ -1,0 +1,41 @@
+{
+  "eventKey": "pr:deleted",
+  "date": "2018-10-26T13:12:28+0200",
+  "actor": {
+    "name": "foo",
+    "emailAddress": "foo@bar.com"
+  },
+  "pullRequest": {
+    "id": 0,
+    "version": 1,
+    "title": "Test PR",
+    "description": "This is a test PR",
+    "state": "DECLINED",
+    "createdDate": 1540552338000,
+    "updatedDate": 1540552343000,
+    "closedDate": 1540552343000,
+    "fromRef": {
+      "id": "refs/heads/foo",
+      "displayId": "foo",
+      "repository": {
+        "name": "bar",
+        "project": {
+          "key": "bar",
+          "name": "foo"
+        }
+      }
+    },
+    "toRef": {
+      "id": "refs/heads/master",
+      "displayId": "master",
+      "repository": {
+        "name": "bar",
+        "project": {
+          "key": "bar",
+          "name": "foo"
+        }
+      }
+    },
+    "locked": false
+  }
+}

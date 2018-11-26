@@ -1,0 +1,23 @@
+{
+  "eventKey": "pr:opened",
+  "date": "2018-10-26T13:12:19+0200",
+  "actor.name": "foo",
+  "actor.emailAddress": "foo@bar.com",
+  "pullRequest.id": 1,
+  "pullRequest.title": "Test PR",
+  "pullRequest.state": "OPEN",
+  "pullRequest.createdDate": 1540552338986,
+  "pullRequest.updatedDate": 1540552338986,
+  "pullRequest.fromRef.displayId": "foo",
+  "pullRequest.fromRef.repository.name": "foo",
+  "pullRequest.fromRef.repository.state": "AVAILABLE",
+  "pullRequest.fromRef.repository.project.name": "foo",
+  "pullRequest.toRef.displayId": "master",
+  "pullRequest.toRef.repository.name": "foo",
+  "pullRequest.toRef.repository.state": "AVAILABLE",
+  "pullRequest.toRef.repository.project.name": "foo",
+  "pullRequest.author.user.name": "foo",
+  "pullRequest.author.user.emailAddress": "foo@bar.com",
+  "pullRequest.author.status": "UNAPPROVED",
+  "eventType": "BitbucketEvent"
+}

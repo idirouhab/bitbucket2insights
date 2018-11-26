@@ -4,7 +4,7 @@
   "description": "Send bitbucket events to New Relic Insights",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "./node_modules/.bin/_mocha -- tests/*",
     "lint": "./node_modules/.bin/eslint \"**/*.js\"",
     "start": "node index.js"
   },
@@ -32,6 +32,8 @@
     "swagger-ui-express": "^4.0.1"
   },
   "devDependencies": {
-    "eslint": "^5.9.0"
+    "chai": "^4.2.0",
+    "eslint": "^5.9.0",
+    "mocha": "^5.2.0"
   }
 }
