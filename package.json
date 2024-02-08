@@ -30,7 +30,7 @@
     "express": "^4.16.4",
     "flat": "^5.0.2",
     "lodash": "^4.17.20",
-    "request": "^2.88.0",
+    "request": "^2.88.2",
     "swagger-ui-express": "^4.0.1",
     "snyk": "^1.319.1"
   },
